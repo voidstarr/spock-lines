@@ -46,17 +46,18 @@ def getlines(season, ep):
             line = ''
 
 def doit():
+    print "s:0 e:1"
     getlines(0,1)
     for i in range(1, 30):
-        print i
+        print "s:1 e:{}".format(i)
         getlines(1,i)
     
     for i in range(1, 26):
-        print i
+        print "s:2 e:{}".format(i)
         getlines(2,i)
   
     for i in range(1, 24):
-        print i
+        print "s:3 e:{}".format(i)
         getlines(3,i)
     
 doit()
